@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <androidx.fragment.app.FragmentContainerView
+      android:layout_width="0dp"
+      android:layout_height="@+id/nav_host_fragment"
+      android:layout_widht="0dp"
+      android:name="androidx.navigation.fragment.NavHostFragment"
+      app:defaultNavHost="true"
+      app:layout_constraintBottom_toBottomOff="Parent"
+      app:layout_constraintLeft_toLeftOff="Parent"
+      app:layout_constraintRight_toRightOff="Parent"
+      app:layout_constraintTop_toTopOff="Parent"
+      app:navGraph="@navigation/main_graph"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
